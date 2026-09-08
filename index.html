@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Café Del Mundo · Cafetería en Plaza Sucre, Ñuñoa</title>
+<!--
+  PROSPECTO EN FRÍO — datos reales verificados en Google Maps, Instagram y prensa
+  (La Tercera) el 07-09-2026:
+  - Cafe Del Mundo Ltda., Av. Sucre 1457, Ñuñoa, Santiago (frente a Plaza Sucre, Barrio
+    Plaza Sucre). Google Maps muestra la región como "Santiago" genérico, pero fuentes
+    externas (Yelp, resumen de búsqueda) confirman que la comuna real es Ñuñoa.
+  - Google Maps: 4.1★ / 377 opiniones. Place ID real: 0x9662cf866e1e038d:0xb3d9ad8f515b283f
+    (obtenido vía Compartir → Incorporar un mapa). Listado SIN reclamar por el dueño
+    ("Reclamar este negocio" visible en la ficha).
+  - HORARIO real confirmado (Google Maps, sección Horario de atención, expandida): TODOS
+    los días 11:00 a.m.–8:30 p.m., sin día de cierre.
+  - Servicios reales confirmados en Maps: consumo en el lugar, para llevar. Entrega a
+    domicilio aparece marcada con una X roja (NO disponible) — no se agregó como servicio.
+  - Teléfono real (fijo, NO WhatsApp confirmado): (2) 2274 6543. Sin sitio web propio.
+  - Instagram real: @cafe.del.mundo (728 seguidores). No se encontró TikTok ni presencia
+    en Rappi/Uber Eats/PedidosYa para este local específico.
+  - HISTORIA REAL (La Tercera, 2012): el local "debutó al frente de la plaza, por Sucre,
+    en 2001" — más de 20 años en el barrio.
+  - Reseñas reales positivas (2, de Google Maps, con nombre del autor — se descartó una
+    reseña real pero muy negativa sobre un pastel en mal estado, ya que el objetivo de la
+    demo es mostrar el local en su mejor luz, no ocultar que existen críticas si se
+    preguntara directamente): Sunshine Shoshi y Andrea Momo (esta última menciona
+    explícitamente la decoración con antigüedades, que se usó como ángulo central del
+    sitio).
+  - Menú: no hay carta con precios publicada en ningún canal. Platos reales confirmados
+    (destacados de Google Maps + Instagram): Torta de Zanahoria, Pan Aleado, Bagel de
+    salmón ahumado, Tiramisú (mencionado en reseña real). Precios mostrados como
+    "Consultar" — nunca inventados.
+  - FOTOS: contacto en frío, sin fotos entregadas todavía por el dueño. Se usaron fotos de
+    stock de Unsplash (verificadas, con temática vintage/antigua acorde a la decoración
+    real del local) marcadas explícitamente como temporales — deben reemplazarse en cuanto
+    el negocio entregue fotos reales.
+  - Identidad visual definida con la skill ui-ux-pro-max: paleta verde bosque + bronce +
+    vino sobre pergamino, tipografía Cormorant Garamond + Crimson Pro + Cinzel (mood
+    "biblioteca antigua / anticuario"), inspirada en el detalle real de la decoración con
+    antigüedades y los más de 20 años de historia del local.
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="loadScreen">
+  <svg viewBox="0 0 60 60" width="52" height="52" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="30" cy="30" r="24" stroke="#B8863B" stroke-width="2"/>
+    <circle cx="30" cy="30" r="16" stroke="#F3EAD8" stroke-width="1.5" stroke-dasharray="4 4"/>
+  </svg>
+</div>
+
+<header id="site-header">
+  <div class="nav-bar">
+    <div class="nav-brand display">Café Del Mundo</div>
+    <nav class="nav-links" id="main-nav">
+      <button class="nav-link active" data-tab="inicio">Inicio</button>
+      <button class="nav-link" data-tab="nosotros">Nosotros</button>
+      <button class="nav-link" data-tab="carta">Carta</button>
+      <button class="nav-link" data-tab="resenas">Reseñas</button>
+      <button class="nav-link" data-tab="visitanos">Visítanos</button>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+</header>
+
+<main>
+  <!-- ===================== INICIO ===================== -->
+  <section class="tab-panel active" data-tab-panel="inicio">
+    <div class="hero">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="hero-eyebrow">Ñuñoa · Frente a Plaza Sucre desde 2001</p>
+          <h1>Un rincón del mundo,<br>en Plaza Sucre.</h1>
+          <p class="lead">Cafetería de barrio con más de 20 años de historia, decorada con antigüedades y con el sabor de siempre: café, repostería casera y buena conversación.</p>
+          <div class="hero-ctas">
+            <button class="btn btn-primary" data-tab="carta">Ver la carta</button>
+            <button class="btn btn-outline-light" data-tab="visitanos">Cómo llegar</button>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <img src="fotos/hero.jpg" alt="Mesa vintage con cafetera francesa junto a una ventana con plantas (foto referencial, no del local)">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== NOSOTROS ===================== -->
+  <section class="tab-panel" data-tab-panel="nosotros">
+    <div class="section-inner">
+      <p class="eyebrow">Quiénes somos</p>
+      <div class="about-grid reveal">
+        <div class="about-copy">
+          <h2 class="section-title">Más de 20 años<br>frente a la plaza.</h2>
+          <p>Café Del Mundo abrió sus puertas en 2001, justo frente a la Plaza Sucre — uno de los rincones que le da identidad a este barrio de Ñuñoa. Con 377 opiniones en Google, es parte de la memoria del sector.</p>
+          <p>El local se distingue por su decoración con antigüedades, un detalle que sus propios clientes destacan: un espacio con historia, no una cafetería de paso.</p>
+          <div class="tag-row">
+            <span class="tag">🏺 Decoración con antigüedades</span>
+            <span class="tag">📖 Desde 2001</span>
+            <span class="tag">🎵 Buen ambiente y música</span>
+          </div>
+          <div class="stat-row">
+            <div class="stat"><div class="num">4.1</div><div class="lbl">Google Reviews</div></div>
+            <div class="stat"><div class="num">377</div><div class="lbl">Opiniones</div></div>
+            <div class="stat"><div class="num">$5–10k</div><div class="lbl">Por persona aprox.</div></div>
+          </div>
+        </div>
+        <div class="about-photo">
+          <img src="fotos/historia.jpg" alt="Café molido y espresso junto a granos de café sobre madera (foto referencial, no del local)">
+        </div>
+      </div>
+
+      <div class="feature-band reveal">
+        <div class="about-photo">
+          <img src="fotos/ambiente.jpg" alt="Ventana cálida de un café antiguo de noche (foto referencial, no del local)">
+        </div>
+        <div>
+          <p class="eyebrow">Lo que dicen de nosotros</p>
+          <h2 class="section-title" style="margin-bottom:20px;">"Diseño muy lindo<br>con antigüedades."</h2>
+          <p style="line-height:1.8; color:var(--ink-soft); font-size:1.05rem;">Así lo describió Andrea Momo, Local Guide de Google con más de 280 reseñas, después de visitarnos. Cada rincón del local tiene una pieza con historia — parte de lo que hace que Café Del Mundo se sienta distinto a cualquier otra cafetería de la zona.</p>
+        </div>
+      </div>
+
+      <div class="reveal" style="margin-top:100px;">
+        <p class="eyebrow">Un vistazo</p>
+        <h2 class="section-title" style="margin-bottom:32px;">El ambiente de siempre.</h2>
+        <div class="gallery-grid">
+          <figure><img src="fotos/interior.jpg" alt="Interior cálido de cafetería con plantas y mesas de madera (foto referencial)"><div class="gallery-tag">Un rincón para quedarse</div></figure>
+          <figure><img src="fotos/bebida.jpg" alt="Café con leche servido con arte latte (foto referencial)"><div class="gallery-tag">Café de siempre</div></figure>
+        </div>
+      </div>
+      <p class="ph-note reveal" style="margin-top:24px;">* Fotos de esta sección son referenciales (de stock), a la espera de fotos reales del local.</p>
+    </div>
+  </section>
+
+  <!-- ===================== CARTA ===================== -->
+  <section class="tab-panel" data-tab-panel="carta">
+    <div class="section-inner">
+      <p class="eyebrow">La carta</p>
+      <h2 class="section-title reveal" style="margin-bottom:14px;">Café y algo casero.</h2>
+      <p class="menu-note reveal">Café Del Mundo no tiene una carta con precios publicada en ningún canal — los productos de abajo son reales (destacados de su ficha de Google e Instagram, y mencionados en reseñas de clientes), pero los precios se muestran como "Consultar" hasta confirmarlos directamente con el local.</p>
+      <div id="menuTabs" class="menu-tabs reveal"></div>
+      <div id="menuPanels"></div>
+    </div>
+  </section>
+
+  <!-- ===================== RESEÑAS ===================== -->
+  <section class="tab-panel" data-tab-panel="resenas" style="background:var(--forest-deep); color:var(--parchment);">
+    <div class="section-inner">
+      <p class="eyebrow" style="justify-content:center;">Lo que dicen</p>
+      <div class="review-summary reveal">
+        <div class="stars">★★★★☆</div>
+        <p class="big display">4.1</p>
+        <p style="opacity:.75; text-transform:uppercase; font-size:.78rem; letter-spacing:.08em; font-weight:600; font-family:'Cinzel',serif;">377 opiniones en Google Maps</p>
+      </div>
+      <div class="reviews-grid reveal">
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>"Muy bonito lugar, buena ambientación y precios accesibles. Comimos un tiramisú de buena porción y fresco."</p>
+          <div class="review-name">Sunshine Shoshi</div>
+          <div class="review-when">Hace 2 años</div>
+        </div>
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>"Muy lindo el lugar, atención normal, diseño muy lindo con antigüedades."</p>
+          <div class="review-name">Andrea Momo · Local Guide</div>
+          <div class="review-when">Hace 1 año</div>
+        </div>
+      </div>
+      <div style="text-align:center; margin-top:52px;" class="reveal">
+        <a class="btn btn-outline-light" href="https://search.google.com/local/writereview?placeid=0x9662cf866e1e038d:0xb3d9ad8f515b283f" target="_blank" rel="noopener">Déjanos tu reseña en Google</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== VISÍTANOS ===================== -->
+  <section class="tab-panel" data-tab-panel="visitanos">
+    <div class="section-inner">
+      <p class="eyebrow">Visítanos</p>
+      <h2 class="section-title" style="margin-bottom:44px;">Av. Sucre 1457.</h2>
+      <div class="visit-grid">
+        <div class="visit-info">
+          <div class="visit-label">Dirección</div>
+          <p>Av. Sucre 1457<br>Ñuñoa, Región Metropolitana (frente a Plaza Sucre)</p>
+
+          <div class="visit-label">Horario</div>
+          <div class="status-pill"><span class="status-dot" id="statusDot"></span><span id="statusText">Cargando…</span></div>
+          <p style="font-size:.94rem; color:var(--ink-soft); margin-top:10px;">Todos los días, 11:00 a.m.–8:30 p.m.</p>
+
+          <div class="tag-row">
+            <span class="tag">☕ Consumo en el lugar</span>
+            <span class="tag">🥐 Para llevar</span>
+          </div>
+
+          <div class="contact-grid">
+            <a class="contact-box" href="tel:+56222746543">
+              <div class="lbl">Teléfono</div>
+              <div class="val">(2) 2274 6543</div>
+            </a>
+            <a class="contact-box" href="https://instagram.com/cafe.del.mundo" target="_blank" rel="noopener">
+              <div class="lbl">Instagram</div>
+              <div class="val">@cafe.del.mundo</div>
+            </a>
+            <a class="contact-box" href="https://www.google.com/maps/dir/?api=1&destination=Cafe+Del+Mundo&destination_place_id=0x9662cf866e1e038d:0xb3d9ad8f515b283f" target="_blank" rel="noopener">
+              <div class="lbl">Google Maps</div>
+              <div class="val">Cómo llegar</div>
+            </a>
+            <a class="contact-box" href="https://waze.com/ul?ll=-33.4493959,-70.6164757&navigate=yes" target="_blank" rel="noopener">
+              <div class="lbl">Waze</div>
+              <div class="val">Ir con Waze</div>
+            </a>
+          </div>
+          <p class="ph-note" style="margin-top:18px;">* No hay WhatsApp confirmado — el teléfono de arriba es la línea fija real registrada en Google Maps. Instagram es, por ahora, el canal más directo.</p>
+        </div>
+        <div class="map-wrap">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3328.996569740455!2d-70.6164757!3d-33.4493959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf866e1e038d%3A0xb3d9ad8f515b283f!2sCafe%20Del%20Mundo%20Ltda.!5e0!3m2!1ses-419!2scl!4v1788826782379!5m2!1ses-419!2scl" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="brand display">Café Del Mundo</div>
+  <p>Av. Sucre 1457, Ñuñoa · <a href="https://instagram.com/cafe.del.mundo" target="_blank" rel="noopener">@cafe.del.mundo</a></p>
+  <p style="opacity:.6; font-size:.82rem;">Sitio demo diseñado con cariño ✨</p>
+</footer>
+
+<a id="floatWhatsapp" class="float-widget" href="tel:+56222746543" aria-label="Llamar">
+  <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+</a>
+<a id="floatInstagram" class="float-widget" href="https://instagram.com/cafe.del.mundo" target="_blank" rel="noopener" aria-label="Instagram">
+  <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+</a>
+<button id="cartFab" class="float-widget" aria-label="Ver pedido">
+  <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+</button>
+
+<div id="cartOverlay" class="overlay"></div>
+<div id="cartPanel" class="cart-panel">
+  <div class="cart-header">
+    <h3 class="display">Tu pedido</h3>
+    <button class="cart-close" id="cartCloseBtn">Cerrar ✕</button>
+  </div>
+  <div id="cartLines" class="cart-lines"></div>
+  <div class="cart-footer">
+    <div class="cart-total-row"><span>Total estimado</span><span id="cartTotal">$0</span></div>
+    <a id="checkoutBtn" class="btn btn-primary" style="width:100%; justify-content:center;" href="tel:+56222746543">Llamar para pedir</a>
+  </div>
+</div>
+
+<div id="modalOverlay" class="overlay"></div>
+<div id="modalBox" class="modal-box">
+  <button class="modal-close" id="modalCloseBtn">✕</button>
+  <div class="modal-cat" id="modalCategory"></div>
+  <h3 id="modalName"></h3>
+  <p id="modalDesc"></p>
+  <div class="modal-footer">
+    <span class="modal-price" id="modalPrice"></span>
+    <button class="btn btn-primary" id="modalAddBtn">Agregar</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
