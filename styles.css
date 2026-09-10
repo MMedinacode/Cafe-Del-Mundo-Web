@@ -199,3 +199,13 @@ footer a{color:var(--brass);}
 @media (max-width:640px){
   section{padding:72px 0;}
 }
+
+/* Quien active "reducir movimiento" en su sistema deberia ver la pagina
+   quieta: no es una preferencia estetica, hay gente a la que el
+   movimiento le produce mareo. */
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{
+    animation-duration:.01ms !important; animation-iteration-count:1 !important;
+    transition-duration:.01ms !important; scroll-behavior:auto !important;
+  }
+}
