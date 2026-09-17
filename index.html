@@ -71,6 +71,82 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="pulido.css">
+
+<!-- ══════════════════════════════════════════════════════════════
+     Datos estructurados (schema.org)
+     ══════════════════════════════════════════════════════════════
+     Esto no se ve en la página: lo lee Google. Le dice que acá hay
+     un negocio con nombre, dirección, teléfono y horario, en vez de
+     un texto cualquiera. Es lo que permite salir como ficha y no
+     sólo como un resultado más.
+
+     Todo lo de abajo ya está publicado en esta misma página. Si un
+     dato no estaba, el campo simplemente no aparece. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CafeOrCoffeeShop",
+  "name": "Café Del Mundo",
+  "description": "Café Del Mundo. Un rincón del mundo, en Plaza Sucre. 4.1★ con 377 opiniones en Google.",
+  "url": "https://mmedinacode.github.io/Cafe-Del-Mundo-Web/",
+  "telephone": "+56222746543",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Av. Sucre 1457",
+    "addressLocality": "Ñuñoa",
+    "addressRegion": "Región Metropolitana",
+    "addressCountry": "CL"
+  },
+  "sameAs": [
+    "https://instagram.com/cafe.del.mundo"
+  ],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Monday",
+      "opens": "11:00",
+      "closes": "20:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Tuesday",
+      "opens": "11:00",
+      "closes": "20:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Wednesday",
+      "opens": "11:00",
+      "closes": "20:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Thursday",
+      "opens": "11:00",
+      "closes": "20:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Friday",
+      "opens": "11:00",
+      "closes": "20:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "11:00",
+      "closes": "20:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Sunday",
+      "opens": "11:00",
+      "closes": "20:30"
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -171,7 +247,7 @@
     <div class="section-inner">
       <p class="eyebrow">La carta</p>
       <h2 class="section-title reveal" style="margin-bottom:14px;">Café y algo casero.</h2>
-      <p class="menu-note reveal">Café Del Mundo no tiene una carta con precios publicada en ningún canal — los productos de abajo son reales (destacados de su ficha de Google e Instagram, y mencionados en reseñas de clientes), y los precios se consultan en el local.</p>
+      <p class="menu-note reveal">Los precios se consultan en el local.</p>
       <div id="menuTabs" class="menu-tabs reveal"></div>
       <div id="menuPanels"></div>
     </div>
@@ -243,7 +319,7 @@
               <div class="val">Ir con Waze</div>
             </a>
           </div>
-          <p class="ph-note" style="margin-top:18px;">* No hay WhatsApp confirmado — el teléfono de arriba es la línea fija real registrada en Google Maps. Instagram es, por ahora, el canal más directo.</p>
+          
         </div>
         <div class="map-wrap">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3328.996569740455!2d-70.6164757!3d-33.4493959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf866e1e038d%3A0xb3d9ad8f515b283f!2sCafe%20Del%20Mundo%20Ltda.!5e0!3m2!1ses-419!2scl!4v1788826782379!5m2!1ses-419!2scl" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -303,5 +379,7 @@
 <script>window.REDES={"intro": "Instagram es su canal social; el teléfono publicado es fijo.", "instagram": {"user": "cafe.del.mundo", "nota": "Sin fotos propias todavía en la página."}, "telefono": {"numero": "+56222746543", "nota": "Teléfono fijo."}};</script>
 <script src="redes.js"></script>
 <script src="flotantes.js"></script>
+<script src="vida.js"></script>
+<script src="pulido.js"></script>
 </body>
 </html>

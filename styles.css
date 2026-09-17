@@ -209,3 +209,32 @@ footer a{color:var(--brass);}
     transition-duration:.01ms !important; scroll-behavior:auto !important;
   }
 }
+
+
+/* ══════════════════════════════════════════════════════════════════════
+   Parche 17-09-2026 — la fila de la carta
+   ══════════════════════════════════════════════════════════════════════
+   Antes: display:flex con justify-content:space-between. Con dos hijos
+   (texto y precio) se veía bien. Pero carta-fotos.js mete la miniatura
+   como PRIMER hijo, y con tres hijos space-between los manda a los
+   extremos: la descripción quedaba flotando al centro, con un hueco a
+   cada lado, y el ancho del texto cambiaba de fila en fila.
+
+   Ahora: la foto a la izquierda, el texto ocupando todo lo que sobra, y
+   el precio empujado a la derecha con margin-left:auto. La columna de
+   precios queda recta de arriba abajo, que es de lo que se trata una
+   carta.  min-width:0 es obligatorio: sin él un nombre largo no se
+   parte y desborda la fila. */
+.menu-item{ justify-content:flex-start; align-items:center; }
+.menu-item > *{ min-width:0; }
+.menu-item > .menu-item-text,
+.menu-item > div:not(.cf-thumb):not([class*="price"]):not([class*="precio"]){
+  flex:1 1 auto;
+}
+.menu-item > .cf-thumb{ flex:none; }
+.menu-item > .menu-item-price,
+.menu-item > .price,
+.menu-item > [class*="price"],
+.menu-item > [class*="precio"]{
+  margin-left:auto; flex:none; white-space:nowrap;
+}

@@ -65,7 +65,7 @@ const MENU = {
       { n: 'Pan Aleado', d: 'Otro de los destacados oficiales de la ficha de Google.' },
       { n: 'Tiramisú', d: 'Mencionado por clientes como "de buena porción y fresco".' },
     ],
-    note: 'Productos reales confirmados en Google Maps y reseñas de clientes. Precios a confirmar con el local.'
+    note: 'Los precios se consultan en el local.'
   },
   salado: {
     items: [
