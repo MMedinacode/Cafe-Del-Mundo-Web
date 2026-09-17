@@ -61,8 +61,8 @@ const MENU = {
   },
   reposteria: {
     items: [
-      { n: 'Torta de Zanahoria', d: 'El plato más destacado del local según Google Maps.' },
-      { n: 'Pan Aleado', d: 'Otro de los destacados oficiales de la ficha de Google.' },
+      { n: 'Torta de Zanahoria', d: 'Nuestro plato más destacado.' },
+      { n: 'Pan Aleado', d: 'Otro de nuestros destacados.' },
       { n: 'Tiramisú', d: 'Mencionado por clientes como "de buena porción y fresco".' },
     ],
     note: 'Los precios se consultan en el local.'
