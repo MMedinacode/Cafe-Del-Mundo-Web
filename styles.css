@@ -238,3 +238,27 @@ footer a{color:var(--brass);}
 .menu-item > [class*="precio"]{
   margin-left:auto; flex:none; white-space:nowrap;
 }
+
+/* ── Y en pantalla angosta, el precio baja de línea ────────────────────
+   En 375px la fila tiene cuatro cosas: la miniatura (50px), el nombre,
+   el botón "+" (30px) y el precio, que acá dice "Consultar" y mide 89px.
+   Sumadas no caben, y como el único que puede encogerse es el texto, el
+   nombre terminaba partido en una palabra por línea: "Café / Machiato /
+   con / Muffins / de / Arándanos".
+
+   Con flex-wrap y el orden cambiado, arriba quedan la foto, el nombre y
+   el "+", y el precio se va solo a la línea de abajo. El nombre recupera
+   todo el ancho. */
+@media (max-width:600px){
+  .menu-item{ flex-wrap:wrap; row-gap:8px; }
+  .menu-item > .cf-thumb{ order:0; }
+  .menu-item > .menu-item-text,
+  .menu-item > div:not(.cf-thumb):not([class*="price"]):not([class*="precio"]){
+    order:1; flex:1 1 55%;
+  }
+  .menu-item > .uc-add{ order:2; margin-left:auto; }
+  .menu-item > .menu-item-price,
+  .menu-item > .price,
+  .menu-item > [class*="price"],
+  .menu-item > [class*="precio"]{ order:3; flex:0 0 auto; margin-left:0; }
+}
